@@ -3,8 +3,17 @@ Some, you guessed it, useful scripts for web/mail servers. Include diskspace che
 
 ## hddspace.sh ##
 add the following line to your /etc/crontab file to run the disk space check once per hour:
-> 0	*	*	*	*	root    sh /root/hddspace.sh
+
+    0	*	*	*	*	root    sh /root/hddspace.sh
 ---
 ## backup.sh ##
 add the following line to your /etc/crontab file to run the backupscript every sunday:
-> 20	3	*	*	7	root	/root/backup.sh
+
+    20	3	*	*	7	root	/root/backup.sh
+---
+## blacklist-check.sh ##
+add the following to your /etc/crontab file:
+
+    #m	h	dom	mon	dow	user	cmd
+    10	4	*	*	*	root	/root/blacklist-check.sh -H 37.120.171.113
+---
