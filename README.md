@@ -15,5 +15,5 @@ add the following line to your /etc/crontab file to run the backupscript every s
 add the following to your /etc/crontab file:
 
     #m	h	dom	mon	dow	user	cmd
-    10	4	*	*	*	root	/root/blacklist-check.sh -H 37.120.171.113
+    10	4	*	*	*	root	/root/blacklist-check.sh -H 1.2.3.4
 ---
