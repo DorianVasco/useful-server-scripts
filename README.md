@@ -11,6 +11,10 @@ add the following line to your /etc/crontab file to run the backupscript every s
 
     20	3	*	*	7	root	/root/backup.sh
 ---
+## backup2s3.sh ##
+this script (found and modified) uses duplicity to backup your data to s3 space
+
+---
 ## blacklist-check.sh ##
 add the following to your /etc/crontab file:
 
