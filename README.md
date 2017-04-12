@@ -14,6 +14,15 @@ add the following line to your /etc/crontab file to run the backupscript every s
 ## backup2s3.sh ##
 this script (found and modified) uses duplicity to backup your data to s3 space
 
+it uses duplicity and awscli
+
+install and configure the requirements first:
+
+    apt-get install python-pip
+    pip install boto
+    pip install awscli
+    aws configure
+    
 ---
 ## blacklist-check.sh ##
 add the following to your /etc/crontab file:
